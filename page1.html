@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is value sender</h1>
+
+<button onclick="valueSender()">send value</button>
+<img src="https://www.javatpoint.com/images/nature-1.jpg" alt="Girl in a jacket" id="img">
+
+
+<script>
+	function valueSender()
+{
+var a= document.getElementById("img").src;
+localStorage.setItem("myValue", a);
+window.location.href="index.html";
+}
+
+</script>
+
+</body>
+</html>
